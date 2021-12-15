@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+#wrap {
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* white-space */
+.white-space {
+  display: flex;
+  order: 0;
+  position: relative;
+  width: 100%;
+}
+.white-space p {
+  margin-left: 75px;
+  padding: 15px 0 35px;
+  color: #999;
+  font-size: 9px;
+}
+
+/* header */
+
+  /* logo & search*/
+.header {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  position: relative;
+  width: 60%;
+  padding: 0 75px;
+  box-sizing: border-box;
+}
+.header .top {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+.header .top .logo img {width: 140px;}
+.header .top input[type="search"] {
+  width: 520px;
+  height: 45px;
+  border: 1px solid #608df9;
+  margin-left: 30px;
+}
+
+  /* nav */
+.header .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  padding-top: 90px;
+}
+.header .nav ul {
+  position: relative;
+  width: 12.5%;
+}
+.header .nav ul li {
+  padding-bottom: 20px;
+}
+.header .nav ul::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 95%;
+  background: #555;
+}
+.header .nav ul.m1::before{
+  display: none;
+}
+.header .nav ul .nav_title a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+.header .nav ul .nav_menu a {
+  font-size: 12px;
+  color: #333;
+}
+
+/* login */
+.login {
+  display: flex;
+  order: 2;
+  width: 40%;
+  padding-right: 75px;
+  box-sizing: border-box;
+  background: #fefefe;
+  border: 1px solid #ddd;
+}
+.login form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.login form fieldset {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login form fieldset::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  right: 0;
+  background: #888;
+}
+.login form fieldset:last-child::before {
+  display: none;
+}
+.login form fieldset input {width: 210px;}
+.login form fieldset input[type="text"] {
+  height: 40px;
+  border: 1px solid #608df9;
+  margin-bottom: 15px;
+}
+.login form fieldset input[type="password"] {
+  height: 40px;
+  border: 1px solid #608df9;
+  margin-bottom: 15px;
+}
+.login form fieldset .checkbox {
+  width: 210px;
+  margin-bottom: 15px;
+}
+.login form fieldset .checkbox input[type="checkbox"] {
+  width: 13px;
+  vertical-align: middle;
+}
+.login form fieldset .checkbox label {
+  padding-left: 5px;
+}
+.login form fieldset button {
+  width: 210px;
+  height: 45px;
+}
+.login form fieldset .login_btn{
+  background: #608df9;
+  color: #fff;
+  font-weight: 500;
+}
+.login form fieldset .btn {
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.login form fieldset .btn:last-child {margin: 0;}
+.login form fieldset .kakao_login_btn {background: #fee500;}
+.login form fieldset .qr_login_btn {
+  background: #8bacfb;
+  color: #fff;
+}
+.login form fieldset .join_btn {
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+/* small banner */
+.small_banner {
+  display: flex;
+  order: 3;
+  width: 60%;
+  box-sizing: border-box;
+  padding: 15px 75px;
+}
+.small_banner .ad_main_banner {
+  width: 715px;
+  height: 90px;
+}
+.small_banner .ad_main_banner img{
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+/* weather */
+.weather {
+  display: flex;
+  order: 4;
+  width: 40%;
+  padding-right: 75px;
+  box-sizing: border-box;
+}
+.weather img {width: 100%;}
+
+/* main */
+.main_news {
+  display: flex;
+  order: 5;
+  width: 60%;
+  padding: 0 75px;
+  box-sizing: border-box;
+}
+.main_news{
+  display: flex;
+  flex-direction: column;
+}
+.main_news .news_banner {
+  position: relative;
+  width: 715px;
+  height: 400px;
+  margin: 20px 0;
+  background: url(../images/new_main_img1.jpg) center no-repeat;
+  background-size: cover;
+}
+.main_news .news_banner .news_title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 105px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+.main_news .news_banner .news_title span {
+  display: block;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+}
+.main_news .covid_info {
+  width: 715px;
+  height: 150px;
+  margin: 20px 0;
+  background: blue;
+}
+
+.content01 {
+  display: flex;
+  order: 6;
+  width: 40%;
+  padding-right: 75px;
+  box-sizing: border-box;
+  background: red;
+}
+.content01 .sub_news {
+  width: 500px;
+  height: 315px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.content01 .sub_news .subN{
+  float: left;
+  position: relative;
+  width: 220px;
+  height: 128px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.content01 .sub_news .sub_news1{
+  background: url(../images/new_img1.jpg) no-repeat;
+  background-size: cover;
+}
+.content01 .sub_news .sub_news2{
+  background: url(../images/new_img2.jpg) no-repeat;
+  background-size: cover;
+}
+.content01 .sub_news .sub_news3{
+  background: url(../images/new_img3.jpg) no-repeat;
+  background-size: cover;
+}
+.content01 .sub_news .sub_news4{
+  background: url(../images/new_img4.jpg) no-repeat;
+  background-size: cover;
+}
+.content01 .sub_news .subN p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  padding: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.content02 {
+  display: flex;
+  order: 7;
+  width: 60%;
+  background: blue;
+  height: 450px;
+}
+
+.content03 {
+  display: flex;
+  order: 8;
+  width: 40%;
+  background: green;
+}
+
+.content04 {
+  display: flex;
+  order: 9;
+  width: 60%;
+  background: greenyellow;
+  height: 600px;
+}
+
+.content05 {
+  display: flex;
+  order: 10;
+  width: 40%;
+  background: skyblue;
+}
+
+.footer {
+  display: flex;
+  order: 11;
+  width: 100%;
+  background: gray;
+  height: 60px;
+}
