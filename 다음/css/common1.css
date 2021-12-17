@@ -278,6 +278,9 @@
 .main_news .covid_info .covid_cont .u1 .second {
   color: #eb483f;
 }
+.main_news .covid_info .covid_cont .u1 .sc2 {
+  color: #000;
+}
 .main_news .covid_info .covid_cont .u2 {
   padding-left: 50px;
 }
@@ -486,9 +489,13 @@
   border-bottom: 0;
 }
 .content03 .tap_menu .tap_list {
+  display: none;
   padding: 20px;
   border: 1px solid #000;
   border-top: 0;
+}
+.content03 .tap_menu .tap_list.on{
+  display: block;
 }
 .content03 .tap_menu .tap_list .tapList {
   display: flex;
@@ -632,12 +639,15 @@
 }
 .content05 .shopping_ad img {width: 100%;}
 
-.footer {
-  display: flex;
-  order: 11;
+/* footer */
+.footer_wrap {
   width: 100%;
   background: #608df9;
+}
+.footer {
+  width: 1290px;
   height: 60px;
+  margin: 0 auto;
 }
 .footer ul {
   padding: 22px 0; 
