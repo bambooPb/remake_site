@@ -475,7 +475,7 @@
 }
 .content03 .tap_menu .tapMenu_btn li {
   padding: 20px 0;
-  width: 33.333%;
+  width: 160px;
   float: left;
   box-sizing: border-box;
   font-size: 14px;
@@ -493,6 +493,7 @@
   padding: 20px;
   border: 1px solid #000;
   border-top: 0;
+  box-sizing: border-box;
 }
 .content03 .tap_menu .tap_list.on{
   display: block;

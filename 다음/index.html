@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/common1.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <!-- 웹폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
@@ -302,7 +303,7 @@
           <li>카카오 프렌즈</li>
         </ul>
         <!-- 탭 메뉴 -->
-        <div class="tap_list kakaotv on">
+        <div class="tap_list kakaotv">
           <div class="tapList">
             <div class="tapMenu_pic">
               <img src="images/kakaotv_img1.jpg" alt="더듬이 TV - 우당탕탕안테나">
@@ -550,6 +551,35 @@
       </ul>
     </footer>
   </div>
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>-->
+
+  <script>
+
+    //탭 메뉴
+    var kakaoBtn = $(".tap_menu > ul > li");
+    var kakaoCont = $(".tap_menu > div");
+    
+    kakaoCont.hide().eq(0).show();
+    
+    kakaoBtn.click(function(e){
+      e.preventDefault();
+      var target = $(this);
+      var index = target.index();
+      kakaoBtn.removeClass("active");
+      target.addClass("active");
+      kakaoCont.css("display","none");
+      kakaoCont.eq(index).css("display","block");
+    });
+
+    //new 슬라이더
+    //$(document).ready(function//(){
+    //  $('.news_banner').bxSlider();
+    //})
+
+  </script>
 </body>
 
 </html>
