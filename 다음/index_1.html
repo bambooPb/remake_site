@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common1.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <title>다음</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- 상단 여백 -->
+    <article class="white-space">
+      <p>다음을 시작페이지로 <i class="fa fa-caret-right" aria-hidden="true"></i></p>
+    </article>
+
+    <!-- 헤더 영역 -->
+    <header class="header pr_75">
+      <div class="top">
+        <h2 class="logo"><img src="images/logo.png" alt="다음"></h2>
+        <input type="search" class="search_bar">
+      </div>
+      <nav class="nav">
+        <ul class="menu m1">
+          <li class="nav_title"><a href="#a">카페</a></li>
+          <li class="nav_menu"><a href="#a">MY 카페</a></li>
+          <li class="nav_menu"><a href="#a">팬카페</a></li>
+        </ul>
+        <ul class="menu m2">
+          <li class="nav_title"><a href="#a">메일</a></li>
+          <li class="nav_menu"><a href="#a">보낸 메일함</a></li>
+          <li class="nav_menu"><a href="#a">받은 메일함</a></li>
+        </ul>
+        <ul class="menu m3">
+          <li class="nav_title"><a href="#a">뉴스</a></li>
+          <li class="nav_menu"><a href="#a">연예</a></li>
+          <li class="nav_menu"><a href="#a">스포츠</a></li>
+          <li class="nav_menu"><a href="#a">정치·경제</a></li>
+        </ul>
+        <ul class="menu m4">
+          <li class="nav_title"><a href="#a">쇼핑</a></li>
+          <li class="nav_menu"><a href="#a">핫딜</a></li>
+          <li class="nav_menu"><a href="#a">베스트</a></li>
+          <li class="nav_menu"><a href="#a">특가</a></li>
+        </ul>
+        <ul class="menu m5">
+          <li class="nav_title"><a href="#a">지도</a></li>
+          <li class="nav_menu"><a href="#a">길찾기</a></li>
+          <li class="nav_menu"><a href="#a">맛집</a></li>
+        </ul>
+        <ul class="menu m6">
+          <li class="nav_title"><a href="#a">증권</a></li>
+          <li class="nav_menu"><a href="#a">국내</a></li>
+          <li class="nav_menu"><a href="#a">해외</a></li>
+          <li class="nav_menu"><a href="#a">투자정보</a></li>
+        </ul>
+        <ul class="menu m7">
+          <li class="nav_title"><a href="#a">웹툰</a></li>
+          <li class="nav_menu"><a href="#a">로맨스</a></li>
+          <li class="nav_menu"><a href="#a">액션</a></li>
+          <li class="nav_menu"><a href="#a">코미디</a></li>
+        </ul>
+        <ul class="menu m8">
+          <li class="nav_title"><a href="#a">게임</a></li>
+          <li class="nav_menu"><a href="#a">PC게임</a></li>
+          <li class="nav_menu"><a href="#a">모바일게임</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 로그인 영역 -->
+    <section class="login">
+      <form action="">
+        <fieldset>
+          <input type="text" placeholder=" 아이디" alt="아이디를 입력하는 란입니다.">
+          <input type="password" placeholder=" 비밀번호" alt="비밀번호를 입력하는 란입니다.">
+          <div class="checkbox">
+            <input type="checkbox" value="아이디 저장" id="idSave"><label for="idSave">아이디 저장</label>
+          </div>
+          <button class="login_btn" alt="로그인를 하기위한 버튼입니다.">로그인</button>
+        </fieldset>
+        <fieldset>
+          <button class="kakao_login_btn btn" alt="카카오 계정로그인를 하기위한 버튼입니다.">카카오 계정 로그인</button>
+          <button class="qr_login_btn btn" alt="QR로그인를 하기위한 버튼입니다.">QR로그인</button>
+          <button class="join_btn btn" alt="회원가입란입니다.">회원가입</button>
+        </fieldset>
+      </form>
+    </section>
+    <section class="small_banner pr_75">
+      <div class="ad_main_banner">
+        <img src="images/ad_img1.jpg" alt="갤럭시 워치4 광고">
+      </div>
+    </section>
+    <section class="weather">
+      <img src="images/weather_img.jpg" alt="날씨">
+    </section>
+
+    <!-- 메인 뉴스 영역 -->
+    <main class="main_news pr_75">
+      <div class="slider">
+        <div>
+          <img src="images/new_main_img1.jpg" alt="뉴스사진">
+          <p class="news_title">
+            "엄마 돈 갚아"란 말에..여친 살해 암매장한 40대
+            <span>어머니 산소에 들르자며 야산으로 유인, 몽둥이 내리쳐 범행피해자 핸드폰으로 가족에게 문자 보내 살아있는 것처럼 속여 범행을 계획</span>
+          </p>
+        </div>
+        <div>
+          <img src="images/new_main_img2.jpg" alt="뉴스사진">
+          <p class="news_title">
+            “얀센, 오미크론 아예 못 막아…화이자도 효과 17분의 1로 줄어”
+            <span>신종 코로나바이러스 감염증(코로나19) 백신인 존슨앤존슨사(社)의 얀센이 코로나19 새 변이인 오미크론에 대해서는 중화항체를 아예 생성하지 못한다는 연구 결과가 나왔다.</span>
+          </p>
+        </div>
+        <div>
+          <img src="images/new_main_img3.jpg" alt="뉴스사진">
+          <p class="news_title">
+            美 MZ세대 백만장자 절반 "내년 암호화폐 보유량 늘릴 것"
+            <span>미국의 젊은 백만장자들이 자신들의 재산 대부분을 암호화폐로 보유하고 있으며 내년에도 더 많은 양을 사들이겠다고 밝혔다.</span>
+          </p>
+        </div>
+      </div>
+      <div class="covid_info">
+        <div class="covid_cont1 covid_cont">
+          <p>코로나 확진자 현황</p>
+          <ul class="u1">
+            <li class="first">확진환자</li>
+            <li class="second">
+              <i class="fa fa-caret-up" aria-hidden="true"></i>
+               7,850</li>
+            <li class="third">536,495</li>
+          </ul>
+          <ul class="u1">
+            <li class="first">사망자</li>
+            <li class="second sc2"><i class="fa fa-caret-up" aria-hidden="true"></i>
+             70</li>
+            <li class="third">4,460</li>
+          </ul>
+        </div>
+        <div class="covid_cont2 covid_cont">
+          <p>코로나 접종자 현황</p>
+          <ul class="u2">
+            <li class="first">1차접종</li>
+            <li class="second">83,94%</li>
+            <li class="third">누적 43,104,019</li>
+          </ul>
+          <ul class="u2">
+            <li class="first">접종완료</li>
+            <li class="second">81.42%</li>
+            <li class="third">누적 41,807,882</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- 뉴스 & 음악 영역 -->
+    <section class="content01">
+      <section class="sub_news">
+        <div class="sub_news1 subN">
+          <p>토트넘, 팀 훈련 재개했다... 손흥민 상˙˙˙</p>
+        </div>
+        <div class="sub_news2 subN">
+          <p>재석 코로나 확진, 백신 맞고도 돌파˙˙˙</p>
+        </div>
+        <div class="sub_news3 subN">
+          <p>실업급여, 올 들어 한 달에 '1조원꼴' ˙˙˙</p>
+        </div>
+        <div class="sub_news4 subN">
+          <p>솔루스첨단소재, SK하이닉스 반도체 ˙˙˙</p>
+        </div>
+      </section>
+      <section class="music">
+        <section class="music_main">
+          <div class="music_main_img">
+            <img src="images/music_img1.jpg" alt="아이유 Celebrity">
+          </div>
+          <p>아이유 'Celebrity'
+            <span>한 해 동안 가장 많이 선곡된 곡은 아이유의 'Celebrity'였습니다. 응원의 메시지로 많은 이들에게 위로를 준 'Celebrity'는 아이유로서의 면모를 어느 때보다 강하게
+              보여준 ···</span>
+          </p>
+        </section>
+        <section class="music_sub">
+          <div class="music_sub1 musicSub">
+            <div class="music_pic">
+              <img src="images/music_rank_img1.jpg" alt="음반사진">
+            </div>
+            <div class="music_introduction">
+              <p class="music_title">
+                Counting Stars
+                <span class="music_desc">
+                  들은 내 작품을 전시 밀라노에 Not 일방통행 나 피만 토했던 시절을 생각하면 눈물이 핑 도네
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="music_sub2 musicSub">
+            <div class="music_pic">
+              <img src="images/music_rank_img2.jpg" alt="음반사진">
+            </div>
+            <div class="music_introduction">
+              <p class="music_title">
+                사랑은 늘 도망가
+                <span class="music_desc">
+                  눈물이 난다 이 길을 걸으면 그 사람 손길이 자꾸 생각이 난다 붙잡지 못하고 가슴만 떨었지
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="music_sub3 musicSub">
+            <div class="music_pic">
+              <img src="images/music_rank_img3.jpg" alt="음반사진">
+            </div>
+            <div class="music_introduction">
+              <p class="music_title">
+                ELEVEN
+                <span class="music_desc">
+                  따분한 나의 눈빛이 무표정했던 얼굴이 널 보며 빛나고 있어 널 담은 눈동자는 odd 내 안에 빼곡하게 피어나는 blue
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="music_sub4 musicSub">
+            <div class="music_pic">
+              <img src="images/music_rank_img4.jpg" alt="음반사진">
+            </div>
+            <div class="music_introduction">
+              <p class="music_title">
+                strawberry moon
+                <span class="music_desc">
+                  달이 익어가니 서둘러 젊은 피야 민들레 한 송이 들고 사랑이 어지러이 떠다니는 밤이야
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- 웹툰 영역 -->
+    <section class="content02">
+      <section class="webtoon pr_75">
+        <section class="webtoon_recommend webtoonBox">
+          <p class="webtoon_title">웹툰추천</p>
+          <div class="webtoon_main">
+            <img src="images/webtoon_main1.jpg" alt="뒤끝작렬">
+          </div>
+          <div class="webtoon_sub">
+            <div class="webtooSub1 webtoonSub">
+              <div class="webtoon_pic">
+                <img src="images/webtoon_sub1.jpg" alt=미생">
+              </div>
+              <div class="webtoon_introduction">
+                <p class="webtoonSub_title">미생</p>
+                <p class="webtoonSub_desc">
+                  자신의 삶을 승리하기 위해 돌을 잇는 사람들
+                </p>
+              </div>
+            </div>
+            <div class="webtooSub2 webtoonSub">
+              <div class="webtoon_pic">
+                <img src="images/webtoon_sub2.jpg" alt="옷소매 붉은 끝동">
+              </div>
+              <div class="webtoon_introduction">
+                <p class="webtoonSub_title">옷소매 붉은 끝동</p>
+                <p class="webtoonSub_desc">
+                  나라를 사랑했던 왕과 자신을 사랑했던 궁녀의 애절한 사랑
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="webtoon_new webtoonBox">
+          <p class="webtoon_title">신작웹툰</p>
+          <div class="webtoon_main">
+            <img src="images/webtoon_main2.jpg" alt="비밀사이">
+          </div>
+          <div class="webtoon_sub">
+            <div class="webtooSub1 webtoonSub">
+              <div class="webtoon_pic">
+                <img src="images/webtoon_sub3.jpg" alt="퀴퀴한 일기">
+              </div>
+              <div class="webtoon_introduction">
+                <p class="webtoonSub_title">퀴퀴한 일기</p>
+                <p class="webtoonSub_desc">
+                  즈질스럽고 퀴퀴한 언니의 쿰쿰한 일상다반사
+                </p>
+              </div>
+            </div>
+            <div class="webtooSub2 webtoonSub">
+              <div class="webtoon_pic">
+                <img src="images/webtoon_sub4.jpg" alt="취향저격그녀">
+              </div>
+              <div class="webtoon_introduction">
+                <p class="webtoonSub_title">취향저격그녀</p>
+                <p class="webtoonSub_desc">
+                  그의 심장을 저격하기 위해 뭉치다! 비밀스런 동거 라이프!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <!-- 탭메뉴 영역 -->
+    <section class="content03">
+      <div class="tap_menu">
+        <!-- 탭메뉴 버튼 -->
+        <ul class="tapMenu_btn">
+          <li class="active">카카오 TV</li>
+          <li>카카오 게임</li>
+          <li>카카오 프렌즈</li>
+        </ul>
+        <!-- 탭 메뉴 -->
+        <div class="tap_list kakaotv">
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img1.jpg" alt="더듬이 TV - 우당탕탕안테나">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">더듬이 TV - 우당탕탕안테나</p>
+              <p class="tapMenu_desc">
+                모두가 알아 주는 가수가 되기 위한 고군분투 웹 예능
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img2.jpg" alt="런웨이2">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">런웨이2</p>
+              <p class="tapMenu_desc">
+                만능 올라운더로 거듭나는 자기계발 리얼리티
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img3.jpg" alt="박준형의 캡쳐맨">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">박준형의 캡쳐맨</p>
+              <p class="tapMenu_desc">
+                BAAAM~! 매주 좋은 자동차 콘텐츠로 달려가겠쓰~~
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img4.jpg" alt="찐경규">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">찐경규</p>
+              <p class="tapMenu_desc">
+                이경규와 '전담PD' 모르모트의 디지털 예능 도전기
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tap_list kakaogame">
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaogame_img1.jpg" alt="배틀그라운드">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">배틀그라운드</p>
+              <p class="tapMenu_desc">
+                모두가 알아 주는 가수가 되기 위한 고군분투 웹 예능
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaogame_img2.jpg" alt="런웨이2">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">런웨이2</p>
+              <p class="tapMenu_desc">
+                만능 올라운더로 거듭나는 자기계발 리얼리티
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaogame_img3.jpg" alt="박준형의 캡쳐맨">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">박준형의 캡쳐맨</p>
+              <p class="tapMenu_desc">
+                BAAAM~! 매주 좋은 자동차 콘텐츠로 달려가겠쓰~~
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaogame_img4.jpg" alt="찐경규">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">찐경규</p>
+              <p class="tapMenu_desc">
+                이경규와 '전담PD' 모르모트의 디지털 예능 도전기
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tap_list kakaotv">
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img1.jpg" alt="더듬이 TV - 우당탕탕안테나">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">더듬이 TV - 우당탕탕안테나</p>
+              <p class="tapMenu_desc">
+                모두가 알아 주는 가수가 되기 위한 고군분투 웹 예능
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img2.jpg" alt="런웨이2">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">런웨이2</p>
+              <p class="tapMenu_desc">
+                만능 올라운더로 거듭나는 자기계발 리얼리티
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img3.jpg" alt="박준형의 캡쳐맨">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">박준형의 캡쳐맨</p>
+              <p class="tapMenu_desc">
+                BAAAM~! 매주 좋은 자동차 콘텐츠로 달려가겠쓰~~
+              </p>
+            </div>
+          </div>
+          <div class="tapList">
+            <div class="tapMenu_pic">
+              <img src="images/kakaotv_img4.jpg" alt="찐경규">
+            </div>
+            <div class="tapMenu_introduction">
+              <p class="tapMenu_title">찐경규</p>
+              <p class="tapMenu_desc">
+                이경규와 '전담PD' 모르모트의 디지털 예능 도전기
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 영화 영역 -->
+    <section class="content04">
+      <div class="movie_banner">
+        <img src="images/movie_main_img1.jpg" alt="엘칸토">
+      </div>
+      <div class="movie_recommend">
+        <div class="content_moive movie1">
+          <div class="movie_img">
+            <img src="images/movie_img1.jpg" alt="스파이더맨 노웨이 홈">
+          </div>
+          <div class="movie_title">
+            <p>스파이더맨 - 노웨이홈</p>
+          </div>
+          <div class="movie_desc">
+            영화 <스파이더맨: 노 웨이 홈>은 정체가 탄로난 스파이더맨 '피터파커'(톰 홀랜드)가 문제를 해결하기 위해 '닥터 스트레인지'(베네딕트 컴버배치)의 도움을 받던 중 뜻하지 않게 멀티버스가
+              열리게 되고, 이를 통해 '닥터 옥토퍼스'(알프리드 몰리나) 등 각기 다른 차원의 숙적들이 나타나며 사상 최악의 위기를 맞게 되는 이야기를 그린 마블 액션 블록버스터.
+          </div>
+        </div>
+        <div class="content_moive movie2">
+          <div class="movie_img">
+            <img src="images/movie_img2.jpg" alt="연애빠진 로맨스">
+          </div>
+          <div class="movie_title">
+            <p>연애빠진 로맨스</p>
+          </div>
+          <div class="movie_desc">
+            일도 연애도 마음대로 되지 않는 스물아홉 `자영`(전종서). 전 남친과의 격한 이별 후 호기롭게 연애 은퇴를 선언했지만 참을 수 없는 외로움에 못 이겨 최후의 보루인 데이팅 어플로 상대를
+            검색한다. 일도 연애도 호구 잡히기 일쑤인 서른셋 `우리`(손석구). 뒤통수 제대로 맞은 연애의 아픔도 잠시 편집장으로부터 19금 칼럼을 떠맡게 되고 데이팅 어플에 반강제로 가입하게 된다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 쇼핑 영역 -->
+    <section class="content05">
+      <div class="shoppingWrap">
+        <div class="shopping_rank">
+          <p>인기상품</p>
+          <ul class="rank_box">
+            <li>
+              <span>1</span>
+              네오 파운데이션
+            </li>
+            <li>
+              <span>2</span>
+              진생로얄 실크 워터리 크림
+            </li>
+            <li>
+              <span>3</span>
+              라이필 더마 콜라겐 800mg
+            </li>
+            <li>
+              <span>4</span>
+              일월전기매트 골드에디션
+            </li>
+            <li>
+              <span>5</span>
+              소가죽 컴포트 부츠
+            </li>
+            <li>
+              <span>6</span>
+              손담비 다이어트 바이탈 뷰티
+            </li>
+            <li>
+              <span>7</span>
+              싱싱동물퍼즐
+            </li>
+            <li>
+              <span>8</span>
+              소토 무카 스토브 버너
+            </li>
+            <li>
+              <span>9</span>
+              하이넥 벨티드 하프 패딩
+            </li>
+            <li>
+              <span>10</span>
+              시나고 타이콘 저온 3D펜
+            </li>
+          </ul>
+        </div>
+        <div class="shopping_pic1 shopping_pic">
+          <img src="images/shopping_img1.jpg" alt="모델사진">
+        </div>
+        <div class="shopping_pic2 shopping_pic">
+          <img src="images/shopping_img2.jpg" alt="모델사진">
+        </div>
+      </div>
+      <div class="shopping_ad">
+        <img src="images/shopping_main_img1.jpg" alt="쇼핑 광고 배너">
+      </div>
+    </section>
+
+  </div>
+  <div class="footer_wrap">
+    <!-- 푸터 영역 -->
+    <footer class="footer">
+      <ul>
+        <li><a href="#"><img src="images/logo.png" alt="다음"></a></li>
+        <li><a href="#a">회사소개</a></li>
+        <li><a href="#a">이용약관</a></li>
+        <li><a href="#a">운영정책</a></li>
+        <li><a href="#a">청소년보호정책</a></li>
+        <li class="myInfo"><a href="#a">개인정보처리방침</a></li>
+        <li><a href="#a">고객센터</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  <script>
+
+    //탭 메뉴
+    var kakaoBtn = $(".tap_menu > ul > li");
+    var kakaoCont = $(".tap_menu > div");
+    
+    kakaoCont.hide().eq(0).show();
+    
+    kakaoBtn.click(function(e){
+      e.preventDefault();
+      var target = $(this);
+      var index = target.index();
+      kakaoBtn.removeClass("active");
+      target.addClass("active");
+      kakaoCont.css("display","none");
+      kakaoCont.eq(index).css("display","block");
+    });
+
+    //new 슬라이더
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto : true
+      });
+    });
+
+  </script>
+</body>
+
+</html>
