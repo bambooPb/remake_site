@@ -72,3 +72,8 @@ video,img {
   height: 1px;
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/* pddding */
+.pr_75 {
+  padding-right: 75px;
+}
