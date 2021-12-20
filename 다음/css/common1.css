@@ -17,7 +17,8 @@
 .white-space p {
   padding: 15px 0 35px;
   color: #999;
-  font-size: 9px;
+  font-size: 10px;
+  cursor: pointer;
 }
 
 /* header */
@@ -43,6 +44,35 @@
   border: 1px solid #608df9;
   margin-left: 30px;
 }
+  /*search word*/
+.search_word ul {
+  padding-left: 170px;
+}
+.search_word ul li {
+  position: relative;
+  float: left;
+  padding: 10px 10px;
+}
+.search_word ul li:nth-child(1){
+  padding-left: 0;
+}
+.search_word ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 1px;
+  height: 10px;
+  background: #888;
+}
+.search_word ul li:last-child::before{
+  display: none;
+}
+.search_word ul li a {
+  color: #888;
+  font-size: 11px;
+}
 
   /* nav */
 .header .nav {
@@ -51,7 +81,7 @@
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 .header .nav ul {
   position: relative;
@@ -79,8 +109,11 @@
 .header .nav ul .nav_menu a {
   font-size: 12px;
   color: #333;
+  transition: all 0.3s;
 }
-
+.header .nav ul .nav_menu a:hover {
+  color: #608df9;
+}
 /* login */
 .login {
   display: flex;
@@ -398,13 +431,17 @@
 }
 
 .content01 .music .music_sub {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .content01 .music .music_sub .musicSub {
   display: flex;
   flex-direction: row;
   width: 240px;
-  margin-bottom: 20px;
+  padding: 10px 5px;
+  background: #fcfcfc;
+}
+.content01 .music .music_sub .musicSub:nth-child(even){
+  background: #f2f2f2;
 }
 .content01 .music .music_sub .musicSub .music_pic {width: 50px;}
 .content01 .music .music_sub .musicSub .music_pic img {
@@ -503,6 +540,7 @@
   text-align: center;
   border-bottom: 1px solid #000;
   background: #f1f1f1;
+  cursor: pointer;
 }
 .content03 .tap_menu .tapMenu_btn li.active {
   background: #fff;
@@ -511,7 +549,7 @@
 }
 .content03 .tap_menu .tap_list {
   display: none;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #000;
   border-top: 0;
   box-sizing: border-box;
@@ -522,10 +560,14 @@
 .content03 .tap_menu .tap_list .tapList {
   display: flex;
   flex-direction: row;
-  margin-bottom: 12px;
+  padding: 6px 10px;
+  background: #fcfcfc;
 }
 .content03 .tap_menu .tap_list .tapList:last-child {
   margin: 0;
+}
+.content03 .tap_menu .tap_list .tapList:nth-child(even){
+  background: #f2f2f2;
 }
 .content03 .tap_menu .tap_list .tapList .tapMenu_pic {
   width: 75px;
