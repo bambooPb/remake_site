@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header .top_gnb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top_gnb .login_box {overflow: hidden;}
+header .top_gnb .login_box p {
+  position: relative;
+  float: left;
+  padding: 0 15px;
+}
+header .top_gnb .login_box p a {
+  font-size: 14px;
+  letter-spacing: -0.5px
+}
+header .top_gnb .login_box p:first-child::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-40%);
+  content: '';
+  display: block;
+  background: #000;
+  width: 1px;
+  height: 11px;
+}
+header .top_gnb .login_box p .login_info {
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+header .top_gnb .realEstatePrice {
+  padding: 11px 0;
+  width: 190px;
+  background: #60584d;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  color: #fff;
+}
+header .top_gnb .realEstatePrice .rEP_icon {
+  font-size: 24px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+header .top_gnb .realEstatePrice:hover {
+  box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.3);
+}
+
+header .nav {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+header .nav .gnb {width: 100%;}
+header .nav .gnb li {
+  float: left;
+  width: 16.6667%;
+  text-align: center;
+  box-sizing: border-box;
+}
+header .nav .gnb li a {
+  display: block;
+  width: 100%;
+  padding: 28px 0;
+  background: #ffce0b;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+header .nav .gnb li a:hover {
+  background: #fff;
+}

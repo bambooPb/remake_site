@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Document</title>
+    <style>
+        /* gallery */
+.yp-gallery {
+  background: #f3f3f3;}
+.yp-gallery .gallery_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1450px;
+  height: 800px;
+}
+.yp-gallery .gallery_box .gallery_left {
+  width: 750px;
+  height: 440px;
+  background: #000;
+}
+.yp-gallery .gallery_box .gallery_right {
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  height: 440px;
+  background: #000;
+}
+.yp-gallery .gallery_box .gallery_right .gallery_title {
+  width: 670px;
+  height: 220px;
+  background: #ccc;
+}
+.yp-gallery .gallery_box .gallery_right .gallery_title p {
+  padding-top: 60px;
+  text-align: right;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.yp-gallery .gallery_box .gallery_right .gallery_title p span {
+  display: block;
+  font-size: 22px;
+  font-weight: normal;
+  color: #333;
+  letter-spacing: -1px;
+}
+.yp-gallery .gallery_box .gallery_right .gallery_banner {
+  display: flex;
+  justify-content: space-between;
+}
+.yp-gallery .gallery_box .gallery_right .gallery_banner .galleryShow {
+  margin-top: 30px;
+  width: 320px;
+  height: 200px;
+}
+.swiper {
+    width: 670px;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="gallery_right">
+        <div class="gallery_title">
+            <p>
+            <span>용평 리조트를 한 눈에 만나보세요.</span>
+            YONGPYEONG GALLARY
+          </p>
+        </div>
+        <div class="gallery_banner swiper">
+          <div class="swiper-wrapper">
+            <div class="gb1 galleryShow swiper-slide"><img src="img/gallery_img1.jpg" alt="갤러리 이미지"></div>
+            <div class="gb2 galleryShow swiper-slide"><img src="img/gallery_img2.jpg" alt="갤러리 이미지"></div>
+            <div class="gb3 galleryShow swiper-slide"><img src="img/gallery_img3.jpg" alt="갤러리 이미지"></div>
+            <div class="gb4 galleryShow swiper-slide"><img src="img/gallery_img4.jpg" alt="갤러리 이미지"></div>
+            <div class="gb5 galleryShow swiper-slide"><img src="img/gallery_img5.jpg" alt="갤러리 이미지"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".gallery_banner", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+</script>
+</body>
+</html>

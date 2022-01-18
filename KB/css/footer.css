@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.footer {background: #a9a9a9;}
+.footer .footer_menu li {
+  position: relative;
+  padding: 12px;
+  float: left;
+}
+.footer .footer_menu li:first-child {
+  padding-left: 0;
+}
+.footer .footer_menu li a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer .footer_menu li:nth-child(3) a{font-weight: 700;}
+.footer .footer_menu li::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #fff;
+}
+.footer .footer_menu li:last-child::before{
+  display: none;
+}
+
+.footer .info_box {padding: 55px 0;}
+.footer .info_box .f_logo {
+  display: inline-block;
+}
+.footer .info_box .f_info {
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 2.4;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .bottom .mark div {
+  float: left;
+  padding-right: 20px;
+}
+.footer .bottom .mark div img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer .bottom .sns_box p ion-icon {
+  padding-right: 10px;
+  font-size: 30px;
+  color: #fff;
+}
